@@ -5,11 +5,10 @@ using Xunit;
 
 namespace LearningTDD.Tests
 {
-    public class TestMembershipActivation
+    public class TestMembershipUpgradation
     {
-        private const string PASSINGTESTEXPECTED = "ActivateMemberShip, NotifyMember";
-        private const string FAILINGTESTEXPECTED = "UpgradeAccount, NotifyMember";
-
+        private const string PASSINGTESTEXPECTED = "UpgradeAccount, NotifyMember";
+        private const string FAILINGTESTEXPECTED = "ActivateMemberShip, NotifyMember";
         [Fact]
         public void PassingTest()
         {
@@ -20,7 +19,7 @@ namespace LearningTDD.Tests
             orderType.MemberID = 101;
             orderType.Email = "test@example.com";
 
-            IOrder order = new MembershipActivation(orderType);
+            IOrder order = new MembershipUpgradation(orderType);
 
             // Act
             var orderManagement = new OrderManagementApp(order);
@@ -40,7 +39,7 @@ namespace LearningTDD.Tests
             orderType.MemberID = 101;
             orderType.Email = "test@example.com";
 
-            IOrder order = new MembershipActivation(orderType);
+            IOrder order = new MembershipUpgradation(orderType);
 
             // Act
             var orderManagement = new OrderManagementApp(order);
