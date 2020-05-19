@@ -1,0 +1,72 @@
+##########################################################################################
+# The .gitignore file. Ignores the specific files, folders and file types mentioned below.
+# Modification of this file will result in Chnages shown during Commit.
+
+# Author: Prateek Dalbehera (H261279)
+# Change Purpose: Initial Vesrion
+# Created Date: 04/08/2019
+# Last Modified: 03/26/2020
+
+
+###########################################################################################
+
+################ BEGIN: IDE Related (Visual Studio, Pycharm etc) ##########################
+
+# Visual Studio Dev environment settings related.
+**/.vs
+
+# Pycharm IDE settings.
+**/.idea
+**/.ipynb_checkpoints
+*.ipynb
+
+################ END:  IDE Related (Visual Studio, Pycharm etc) ##########################
+
+
+################ BEGIN: Client - Angular Code. ############################################
+
+# Ignore Node Modules folder.
+**/node_modules
+
+# Ignore dist folder (location of published code).
+/Client/OBSToolKit-Client/dist/*
+
+################ END: Client - Angular Code. ##############################################
+
+
+################ BEGIN: API - C# Code. ####################################################
+
+# Do NOT commit the RSA Secrets folder.
+/API/OBSToolKitAPI_Solution/OBSToolKit.API/Secrets/*
+
+# Do NOT commit Certificates.
+**/certificates
+
+# Ignore the binaries folder (bin, obj).
+**/bin
+**/obj
+**/zip
+**/tar
+**/war
+**/ear
+**/jar
+**/exe
+**/msi
+
+################ END: API- C#Code. ########################################################
+
+
+################ BEGIN: Scripting - Python Code. ##########################################
+
+# Do NOT commit the RSA Secrets folder.
+/Python_Script/certificates/*
+# Ignore Logs.
+**/Logs
+
+# Ignore Python Compiled Files.
+**/__pycache__
+
+# Ignore Virtual Environment files.
+**/venv
+
+################ END: Scripting - Python Code. ############################################
