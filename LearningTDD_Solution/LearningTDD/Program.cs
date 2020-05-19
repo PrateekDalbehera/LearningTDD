@@ -1,5 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Services.Implementations.OrderHandling;
+using Services.Interfaces.OrderHandling;
+using Services.Interfaces.OrderHandling.MembershipMgmt;
 using System;
 using System.IO;
 
@@ -21,7 +24,10 @@ namespace LearningTDD
                 var serviceProvider = services.BuildServiceProvider();
 
                 // Start the actual execution of the application.
-                serviceProvider.GetService<OrderManagementApp>().Run();
+                //serviceProvider.GetService<OrderManagementApp>().Run();
+
+                Console.WriteLine($@"Nothing here, execute the Tests please...");
+                Console.Read();
             }
 			catch (Exception ex)
 			{
@@ -40,6 +46,12 @@ namespace LearningTDD
             var config = LoadConfiguration();
 
             services.AddSingleton(config);
+
+            services.AddTransient<IOrder, MembershipActivation>();
+            services.AddTransient<IOrder, MembershipUpgradation>();
+
+            services.AddTransient<IOrderType, MembershipOrderType>();
+            services.AddTransient<IMembershipOrderType, MembershipOrderType>();
 
             // IMPORTANT: Register the application entry point.
             services.AddTransient<OrderManagementApp>();
