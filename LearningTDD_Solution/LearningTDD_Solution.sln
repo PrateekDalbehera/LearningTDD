@@ -3,7 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningTDD", "LearningTDD\LearningTDD.csproj", "{DE7C0D26-5A83-4024-A88C-770F6B40F66C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LearningTDD", "LearningTDD\LearningTDD.csproj", "{DE7C0D26-5A83-4024-A88C-770F6B40F66C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FE772F9E-9BBB-48E8-9932-FD4948183209}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interfaces", "Interfaces", "{834195D0-F322-44A7-B9EB-A9D00643ACD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implementations", "{AEEE3F2E-E8BB-4F32-8F5E-253359A5AE62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderHandling", "OrderHandling", "{143BB6DA-284B-489A-821B-FC8DC07AB86B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OrderHandling", "OrderHandling", "{E74DB466-4B4E-4741-9903-89B753591FF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Interfaces.OrderHandling", "Services.Interfaces.OrderHandling\Services.Interfaces.OrderHandling.csproj", "{DF8579DF-BB29-4734-A39B-72414FB8A3A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +27,20 @@ Global
 		{DE7C0D26-5A83-4024-A88C-770F6B40F66C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE7C0D26-5A83-4024-A88C-770F6B40F66C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE7C0D26-5A83-4024-A88C-770F6B40F66C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8579DF-BB29-4734-A39B-72414FB8A3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8579DF-BB29-4734-A39B-72414FB8A3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8579DF-BB29-4734-A39B-72414FB8A3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8579DF-BB29-4734-A39B-72414FB8A3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{834195D0-F322-44A7-B9EB-A9D00643ACD8} = {FE772F9E-9BBB-48E8-9932-FD4948183209}
+		{AEEE3F2E-E8BB-4F32-8F5E-253359A5AE62} = {FE772F9E-9BBB-48E8-9932-FD4948183209}
+		{143BB6DA-284B-489A-821B-FC8DC07AB86B} = {834195D0-F322-44A7-B9EB-A9D00643ACD8}
+		{E74DB466-4B4E-4741-9903-89B753591FF2} = {AEEE3F2E-E8BB-4F32-8F5E-253359A5AE62}
+		{DF8579DF-BB29-4734-A39B-72414FB8A3A5} = {143BB6DA-284B-489A-821B-FC8DC07AB86B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {037F12CA-1EFD-4384-92BD-EA81ADA35078}
