@@ -15,10 +15,12 @@ namespace Services.Implementations.OrderHandling
             _member = member;
         }
 
-        public virtual void Handle()
+        public virtual string Handle()
         {
             ActivateMemberShip(_member.MemberID);
             NotifyMember(_member.Email);
+
+            return "ActivateMemberShip, NotifyMember";
         }
 
         protected void ActivateMemberShip(int memberId)

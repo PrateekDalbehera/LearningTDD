@@ -12,10 +12,12 @@ namespace Services.Implementations.OrderHandling
             _member = member;
         }
 
-        public override void Handle()
+        public override string Handle()
         {
             UpgradeAccount(_member.MemberID);
             NotifyMember(_member.Email);
+
+            return "UpgradeAccount, NotifyMember";
         }
 
         private void UpgradeAccount(int memberId)

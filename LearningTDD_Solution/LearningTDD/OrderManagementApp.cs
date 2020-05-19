@@ -27,6 +27,11 @@ namespace LearningTDD
             Console.Read();
         }
 
+        public string Handle()
+        {
+            return _order.Handle();
+        }
+
         private void HandleOrder()
         {
             try
