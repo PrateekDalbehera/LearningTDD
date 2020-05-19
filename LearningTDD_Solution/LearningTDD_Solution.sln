@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Interfaces.OrderHa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Implementations.OrderHandling", "Services.Implementations.OrderHandling\Services.Implementations.OrderHandling.csproj", "{6A616D65-2996-4A9D-96A0-91A7F4868E7F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LearningTDD.Tests", "LearningTDD.Tests\LearningTDD.Tests.csproj", "{B61AE0C0-CDDD-474A-A850-9BA0C33EC3F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{6A616D65-2996-4A9D-96A0-91A7F4868E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A616D65-2996-4A9D-96A0-91A7F4868E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A616D65-2996-4A9D-96A0-91A7F4868E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B61AE0C0-CDDD-474A-A850-9BA0C33EC3F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B61AE0C0-CDDD-474A-A850-9BA0C33EC3F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B61AE0C0-CDDD-474A-A850-9BA0C33EC3F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B61AE0C0-CDDD-474A-A850-9BA0C33EC3F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -23,7 +23,7 @@ namespace LearningTDD
                 // Create Provider to use Dependency Injector
                 var serviceProvider = services.BuildServiceProvider();
 
-                // Start the actual execution of the application.
+                // [Not Required, check from Tests] Start the actual execution of the application.
                 //serviceProvider.GetService<OrderManagementApp>().Run();
 
                 Console.WriteLine($@"Nothing here, execute the Tests please...");
